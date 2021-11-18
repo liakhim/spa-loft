@@ -1,19 +1,38 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../components/FirstPage.vue'
+// import Home from '../components/FirstPage.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'Main',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Page.vue'),
+    children: [
+      {
+        path: '/hot-drinks',
+        name: 'hot',
+        component: () => import(/* webpackChunkName: "hot" */ '../views/HotDrink.vue')
+      },
+      {
+        path: '/cold-drinks',
+        name: 'cold',
+        component: () => import(/* webpackChunkName: "cold" */ '../views/ColdDrink.vue')
+      },
+      {
+        path: '/alcohol-drinks',
+        name: 'alco',
+        component: () => import(/* webpackChunkName: "alco" */ '../views/AlcoholDrink.vue')
+      },
+      {
+        path: '/cocktails',
+        name: 'cocktails',
+        component: () => import(/* webpackChunkName: "alco" */ '../views/Cocktails.vue')
+      },
+      {
+        path: '/hookah',
+        name: 'hookah',
+        component: () => import(/* webpackChunkName: "hookah" */ '../views/Hookah.vue')
+      }
+    ]
   }
 ]
 

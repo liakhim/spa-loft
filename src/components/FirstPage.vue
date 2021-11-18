@@ -1,12 +1,7 @@
 <template>
     <div style="width: 100%">
         <div class="container">
-            <div class="header">
-                <div class="logo">
-                    <img src="/assets/img/logo.svg" alt="">
-                </div>
-                <Menu/>
-            </div>
+            <Header/>
             <div class="title">
                 <h2>Горячие напитки</h2>
             </div>
@@ -109,11 +104,11 @@
 
 </template>
 <script>
-import Menu from '../components/Menu.vue'
+import Header from '../components/TheHeader.vue'
 export default {
     name: 'FirstPage',
     components: {
-        Menu
+        Header
     }
 }
 </script>
