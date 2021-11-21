@@ -20,21 +20,21 @@
                 Коктейли
             </router-link>
         </li>
+<!--        <li class="nav-item">-->
+<!--            <router-link to="/hookah">-->
+<!--                Кальян-->
+<!--            </router-link>-->
+<!--        </li>-->
         <li class="nav-item">
-            <router-link to="/hookah">
-                Кальян
-            </router-link>
-        </li>
-        <li class="nav-item">
-            <router-link to="#">
-                VIP
+            <router-link to="/vip-rooms">
+                VIP Rooms
             </router-link>
         </li>
     </ul>
 </template>
 <style lang="scss">
     .nav {
-        padding-top: 10px;
+        padding-top: 20px;
         display: flex;
         align-items: center;
         justify-content: flex-end;

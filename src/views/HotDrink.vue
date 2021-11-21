@@ -10,7 +10,7 @@
                 </div>
                 <div class="menu-block">
                     <ul class="menu-block-title">
-                        <li>Классическиц</li>
+                        <li>Классический</li>
                     </ul>
                     <div class="menu-block-price">
                         <p>300 RUB</p>

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 html {
   // line-height: 1.15;
@@ -12,7 +13,6 @@ body {
   position: relative;
   line-height: 1.2568;
   overflow-x: hidden;
-  color: #fff;
   animation: fade-in 1s linear;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,12 +44,11 @@ h5 {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  color: #fff;
 }
 
 hr {
   box-sizing: content-box;
-  height: 1;
+  height: 1px;
   overflow: visible;
   border-top: 1px solid #bfbfbf;
 }
@@ -163,14 +162,7 @@ legend {
   padding: 0;
   white-space: normal;
 }
-//table {
-//  border: 1px solid #bfbfbf;
-//  border-collapse: collapse;
-//  td {
-//    border: 1px solid #bfbfbf;
-//    padding: 5px;
-//  }
-//}
+
 progress {
   vertical-align: baseline;
 }

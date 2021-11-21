@@ -1,6 +1,7 @@
 @import "./general/normalize";
 @import "./general/color-scheme";
 @import "./components/logo";
+@import "./keyframes/keyframes";
 #app {
   .container {
     // min-height: 100vh;
@@ -35,8 +36,14 @@
     }
   }
   .menu-column {
-    border: 1px solid green;
+    // border: 1px solid green;
     flex: 1;
+    &:first-child {
+      padding: 0 20px 0 0;
+    }
+    &:last-child {
+      padding: 0 0 0 20px;
+    }
     &-subtitle {
       h3 {
         font-size: 1.5rem;
