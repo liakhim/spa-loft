@@ -99,3 +99,21 @@
         </div>
     </div>
 </template>
+<script>
+import { mapMutations } from 'vuex';
+export default {
+    name: 'HotDrinf',
+    methods: {
+        ...mapMutations(['setTheme'])
+    },
+    mounted() {
+        this.setTheme({
+            textColor: '#fff',
+            backgroundColor: '#000',
+            backgroundImageSize: '100% auto',
+            backgroundPosition: 'bottom',
+            backImage: 'hot-back'
+        })
+    }
+}
+</script>

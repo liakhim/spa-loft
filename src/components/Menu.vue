@@ -1,37 +1,41 @@
 <template>
     <ul class="nav">
         <li class="nav-item">
-            <router-link to="/hot-drinks">
+            <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/hot-drinks">
                 Горячие напитки
             </router-link>
         </li>
         <li class="nav-item">
-            <router-link to="/cold-drinks">
+            <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/cold-drinks">
                 Холодные напитки
             </router-link>
         </li>
         <li class="nav-item">
-            <router-link to="/alcohol-drinks">
+            <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/alcohol-drinks">
                 Алкогольные напитки
             </router-link>
         </li>
         <li class="nav-item">
-            <router-link to="/cocktails">
+            <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/cocktails">
                 Коктейли
             </router-link>
         </li>
-<!--        <li class="nav-item">-->
-<!--            <router-link to="/hookah">-->
-<!--                Кальян-->
-<!--            </router-link>-->
-<!--        </li>-->
         <li class="nav-item">
-            <router-link to="/vip-rooms">
+            <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/vip-rooms">
                 VIP Rooms
             </router-link>
         </li>
     </ul>
 </template>
+<script>
+import { mapState } from 'vuex'
+export default {
+    name: 'Menu',
+    computed: {
+        ...mapState(['demoSmoke'])
+    }
+}
+</script>
 <style lang="scss">
     .nav {
         padding-top: 20px;

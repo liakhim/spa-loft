@@ -2,7 +2,8 @@
     <div class="header">
         <div class="header-container">
             <div class="logo">
-                <img src="/assets/img/logo.svg" alt="">
+                <img :style="{'filter': 'invert(' + (($store.state.themeSettings.textColor === '#fff' || $store.state.demoSmoke) ? '0' : '1') + ')'}"
+                     src="/assets/img/logo.svg" alt="">
             </div>
             <Menu/>
         </div>
@@ -20,13 +21,12 @@ export default {
 <style lang="scss">
     .header {
         height: 120px;
-        border: 1px solid red;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background: #00000090;
-        backdrop-filter: blur(10px);
+        z-index: 1000;
+        // backdrop-filter: blur(10px);
         .header-container {
             display: flex;
             align-items: flex-start;

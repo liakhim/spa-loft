@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-BlackItalic.eot');
+    src: local('Blacker Sans Pro Black Italic'), local('BlackerSansPro-BlackItalic'),
+        url('BlackerSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-BlackItalic.woff2') format('woff2'),
+        url('BlackerSansPro-BlackItalic.woff') format('woff'),
+        url('BlackerSansPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-BoldItalic.eot');
+    src: local('Blacker Sans Pro Bold Italic'), local('BlackerSansPro-BoldItalic'),
+        url('BlackerSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-BoldItalic.woff2') format('woff2'),
+        url('BlackerSansPro-BoldItalic.woff') format('woff'),
+        url('BlackerSansPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Bold.eot');
+    src: local('Blacker Sans Pro Bold'), local('BlackerSansPro-Bold'),
+        url('BlackerSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Bold.woff2') format('woff2'),
+        url('BlackerSansPro-Bold.woff') format('woff'),
+        url('BlackerSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Black.eot');
+    src: local('Blacker Sans Pro Black'), local('BlackerSansPro-Black'),
+        url('BlackerSansPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Black.woff2') format('woff2'),
+        url('BlackerSansPro-Black.woff') format('woff'),
+        url('BlackerSansPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro Book';
+    src: url('BlackerSansPro-Book.eot');
+    src: local('Blacker Sans Pro Book'), local('BlackerSansPro-Book'),
+        url('BlackerSansPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Book.woff2') format('woff2'),
+        url('BlackerSansPro-Book.woff') format('woff'),
+        url('BlackerSansPro-Book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro Book';
+    src: url('BlackerSansPro-BookItalic.eot');
+    src: local('Blacker Sans Pro Book Italic'), local('BlackerSansPro-BookItalic'),
+        url('BlackerSansPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-BookItalic.woff2') format('woff2'),
+        url('BlackerSansPro-BookItalic.woff') format('woff'),
+        url('BlackerSansPro-BookItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Extrabold.eot');
+    src: local('Blacker Sans Pro Extrabold'), local('BlackerSansPro-Extrabold'),
+        url('BlackerSansPro-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Extrabold.woff2') format('woff2'),
+        url('BlackerSansPro-Extrabold.woff') format('woff'),
+        url('BlackerSansPro-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-HeavyItalic.eot');
+    src: local('Blacker Sans Pro Heavy Italic'), local('BlackerSansPro-HeavyItalic'),
+        url('BlackerSansPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-HeavyItalic.woff2') format('woff2'),
+        url('BlackerSansPro-HeavyItalic.woff') format('woff'),
+        url('BlackerSansPro-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Extralight.eot');
+    src: local('Blacker Sans Pro Extralight'), local('BlackerSansPro-Extralight'),
+        url('BlackerSansPro-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Extralight.woff2') format('woff2'),
+        url('BlackerSansPro-Extralight.woff') format('woff'),
+        url('BlackerSansPro-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-ExtraboldItalic.eot');
+    src: local('Blacker Sans Pro Extrabold Italic'), local('BlackerSansPro-ExtraboldItalic'),
+        url('BlackerSansPro-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-ExtraboldItalic.woff2') format('woff2'),
+        url('BlackerSansPro-ExtraboldItalic.woff') format('woff'),
+        url('BlackerSansPro-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-ExtralightItalic.eot');
+    src: local('Blacker Sans Pro Extralight Italic'), local('BlackerSansPro-ExtralightItalic'),
+        url('BlackerSansPro-ExtralightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-ExtralightItalic.woff2') format('woff2'),
+        url('BlackerSansPro-ExtralightItalic.woff') format('woff'),
+        url('BlackerSansPro-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Heavy.eot');
+    src: local('Blacker Sans Pro Heavy'), local('BlackerSansPro-Heavy'),
+        url('BlackerSansPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Heavy.woff2') format('woff2'),
+        url('BlackerSansPro-Heavy.woff') format('woff'),
+        url('BlackerSansPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Italic.eot');
+    src: local('Blacker Sans Pro Italic'), local('BlackerSansPro-Italic'),
+        url('BlackerSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Italic.woff2') format('woff2'),
+        url('BlackerSansPro-Italic.woff') format('woff'),
+        url('BlackerSansPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Light.eot');
+    src: local('Blacker Sans Pro Light'), local('BlackerSansPro-Light'),
+        url('BlackerSansPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Light.woff2') format('woff2'),
+        url('BlackerSansPro-Light.woff') format('woff'),
+        url('BlackerSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-MediumItalic.eot');
+    src: local('Blacker Sans Pro Medium Italic'), local('BlackerSansPro-MediumItalic'),
+        url('BlackerSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-MediumItalic.woff2') format('woff2'),
+        url('BlackerSansPro-MediumItalic.woff') format('woff'),
+        url('BlackerSansPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-LightItalic.eot');
+    src: local('Blacker Sans Pro Light Italic'), local('BlackerSansPro-LightItalic'),
+        url('BlackerSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-LightItalic.woff2') format('woff2'),
+        url('BlackerSansPro-LightItalic.woff') format('woff'),
+        url('BlackerSansPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Medium.eot');
+    src: local('Blacker Sans Pro Medium'), local('BlackerSansPro-Medium'),
+        url('BlackerSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Medium.woff2') format('woff2'),
+        url('BlackerSansPro-Medium.woff') format('woff'),
+        url('BlackerSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Regular.eot');
+    src: local('Blacker Sans Pro Regular'), local('BlackerSansPro-Regular'),
+        url('BlackerSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Regular.woff2') format('woff2'),
+        url('BlackerSansPro-Regular.woff') format('woff'),
+        url('BlackerSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlackerSans Pro Variable';
+    src: url('BlackerSansProVariable.eot');
+    src: local('BlackerSans Pro Variable'), local('BlackerSansProVariable'),
+        url('BlackerSansProVariable.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansProVariable.woff2') format('woff2'),
+        url('BlackerSansProVariable.woff') format('woff'),
+        url('BlackerSansProVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-Thin.eot');
+    src: local('Blacker Sans Pro Thin'), local('BlackerSansPro-Thin'),
+        url('BlackerSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-Thin.woff2') format('woff2'),
+        url('BlackerSansPro-Thin.woff') format('woff'),
+        url('BlackerSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlackerSans Pro It Variable';
+    src: url('BlackerSansProItVariable.eot');
+    src: local('BlackerSans Pro It Variable'), local('BlackerSansProItVariable'),
+        url('BlackerSansProItVariable.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansProItVariable.woff2') format('woff2'),
+        url('BlackerSansProItVariable.woff') format('woff'),
+        url('BlackerSansProItVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('BlackerSansPro-ThinItalic.eot');
+    src: local('Blacker Sans Pro Thin Italic'), local('BlackerSansPro-ThinItalic'),
+        url('BlackerSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('BlackerSansPro-ThinItalic.woff2') format('woff2'),
+        url('BlackerSansPro-ThinItalic.woff') format('woff'),
+        url('BlackerSansPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+

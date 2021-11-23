@@ -127,3 +127,21 @@
         </div>
     </div>
 </template>
+<script>
+    import { mapMutations } from 'vuex';
+    export default {
+        name: 'AlcoDrink',
+        methods: {
+            ...mapMutations(['setTheme'])
+        },
+        mounted() {
+            this.setTheme({
+                textColor: '#fff',
+                backgroundColor: '#000',
+                backgroundImageSize: '50%',
+                backgroundPosition: 'bottom right',
+                backImage: 'alco-back'
+            })
+        }
+    }
+</script>

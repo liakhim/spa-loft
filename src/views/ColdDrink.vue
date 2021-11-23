@@ -94,3 +94,21 @@
         </div>
     </div>
 </template>
+<script>
+    import { mapMutations } from 'vuex';
+    export default {
+        name: 'ColdDrink',
+        methods: {
+            ...mapMutations(['setTheme'])
+        },
+        mounted() {
+            this.setTheme({
+                textColor: '#000',
+                backgroundColor: '#fff',
+                backgroundImageSize: '50% auto',
+                backgroundPosition: 'bottom',
+                backImage: 'cold-back'
+            })
+        }
+    }
+</script>
