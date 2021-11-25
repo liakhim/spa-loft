@@ -6,15 +6,17 @@
                      src="/assets/img/logo.svg" alt="">
             </div>
             <Menu/>
+            <Burger/>
         </div>
     </div>
 </template>
 <script>
 import Menu from './Menu.vue'
+import Burger from './Burger.vue'
 export default {
     name: 'Header',
     components: {
-        Menu
+        Menu, Burger
     }
 }
 </script>
@@ -36,10 +38,26 @@ export default {
             @media (max-width: 700px) {
                 max-width: 90%;
             }
+            @media (max-width: 1367px) {
+                max-width: 90%;
+            }
             .logo {
                 padding-top: 20px;
                 img {
+                    min-width: 125px;
                     max-width: 250px;
+                }
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        .header {
+            .header-container {
+                flex-direction: column;
+                .logo {
+                    img {
+                        width: 125px;
+                    }
                 }
             }
         }

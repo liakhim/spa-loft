@@ -9,7 +9,7 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    @media (max-width: 700px) {
+    @media (max-width: 1367px) {
       max-width: 90%;
     }
     .title {
@@ -19,6 +19,9 @@
         text-transform: uppercase;
         line-height: 1.6;
         font-size: 2rem ;
+        @media (max-width: 700px) {
+          font-size: 1.5em;
+        }
       }
     }
   }
@@ -31,6 +34,7 @@
   flex-wrap: wrap;
   @media (max-width: 700px) {
     flex-direction: column;
+    margin-top: 0;
     .menu-column {
       width: 100%;
     }
@@ -38,13 +42,31 @@
   .menu-column {
     // border: 1px solid green;
     flex: 1;
+    .menu-column-rooms-info {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      p {
+        padding-bottom: 10px;
+      }
+    }
     &:first-child {
       padding: 0 20px 0 0;
     }
     &:last-child {
       padding: 0 0 0 20px;
     }
+    @media (max-width: 700px) {
+      &:first-child {
+        padding: 0 0 0 0;
+      }
+      &:last-child {
+        padding: 0 0 0 0;
+      }
+    }
     &-subtitle {
+      @media (max-width: 700px) {
+        margin: 25px 0 0 0;
+      }
       h3 {
         font-size: 1.5rem;
         line-height: 1.6;
@@ -54,6 +76,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 700px) {
+        // margin: 0 0 10px 0;
+      }
       &-title {
         li {
           margin: 0.5rem 0;

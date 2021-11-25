@@ -53,4 +53,36 @@ export default {
             }
         }
     }
+    @media (max-width: 700px) {
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            max-width: 100%;
+            overflow: scroll;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            &-item {
+                padding: 0;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:not(:last-child) {
+                    padding-right: 15px;
+                }
+                a {
+                    white-space: nowrap;
+                    color: #fff;
+                    font-size: 1.2em;
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
 </style>

@@ -2,6 +2,7 @@
     <div class="footer">
         <div class="footer-container container">
             <button class="demoSmoke" type="button" @click="toggleDemoSmoke()">Demo Smoke</button>
+            <button class="demoSmoke green" @click="setUniversalImage()">Universal Image</button>
         </div>
     </div>
 </template>
@@ -10,7 +11,7 @@
     export default {
         name: 'Footer',
         methods: {
-            ...mapMutations(['toggleDemoSmoke'])
+            ...mapMutations(['toggleDemoSmoke', 'setUniversalImage'])
         }
     }
 </script>

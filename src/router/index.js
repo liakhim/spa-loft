@@ -38,6 +38,11 @@ const routes = [
         component: () => import(/* webpackChunkName: "hookah" */ '../views/VipRooms.vue')
       }
     ]
+  },
+  {
+    path: '/preloader',
+    name: 'Preloading',
+    component: () => import('../components/Preloader.vue')
   }
 ]
 

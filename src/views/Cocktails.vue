@@ -4,7 +4,7 @@
             <h2>Коктейли</h2>
         </div>
         <div class="content">
-            <div class="menu-column" style="max-width: 50%">
+            <div class="menu-column" :style="{'max-width': $store.state.width > 700 ? '50%' : '100%'}">
                 <div class="menu-block">
                     <ul class="menu-block-title">
                         <li>Апероль</li>
@@ -65,3 +65,21 @@
         </div>
     </div>
 </template>
+<script>
+    import { mapMutations } from 'vuex';
+    export default {
+        name: 'Cocktails',
+        methods: {
+            ...mapMutations(['setTheme'])
+        },
+        mounted() {
+            this.setTheme({
+                textColor: '#000',
+                backgroundColor: '#fff',
+                backgroundImageSize: '50%',
+                backgroundPosition: 'bottom right',
+                backImage: 'cocktail-back'
+            })
+        }
+    }
+</script>

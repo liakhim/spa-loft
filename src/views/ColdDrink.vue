@@ -4,7 +4,7 @@
             <h2>Холодные напитки</h2>
         </div>
         <div class="content">
-            <div class="menu-column" style="max-width: 50%; padding: 0">
+            <div class="menu-column" :style="{'max-width': $store.state.width > 700 ? '50%' : '100%'}" style="padding: 0">
                 <div class="menu-column-subtitle">
                     <h3>Газированные напитки</h3>
                 </div>
