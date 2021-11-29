@@ -10,7 +10,7 @@
             'color': demoSmoke ? '#fff' : themeSettings.textColor
          }">
             <div class="video-background" v-if="demoSmoke">
-                <video style="width100vw;height: 100vh" autoplay muted loop id="myVideo">
+                <video style="width: 100vw;min-height: 100vh; position: fixed" autoplay muted loop id="myVideo">
                     <source src="/assets/img/smoke.mp4" type="video/mp4">
                 </video>
             </div>

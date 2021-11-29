@@ -5,7 +5,8 @@
                 <img :style="{'filter': 'invert(' + (($store.state.themeSettings.textColor === '#fff' || $store.state.demoSmoke) ? '0' : '1') + ')'}"
                      src="/assets/img/logo.svg" alt="">
             </div>
-            <Menu/>
+            <Menu v-if="$store.state.width > 700"/>
+            <SliderNav v-if="$store.state.width < 700" style="margin-top: 30px;"/>
             <Burger/>
         </div>
     </div>
@@ -13,10 +14,11 @@
 <script>
 import Menu from './Menu.vue'
 import Burger from './Burger.vue'
+import SliderNav from "./SliderNav.vue";
 export default {
     name: 'Header',
     components: {
-        Menu, Burger
+        Menu, Burger, SliderNav
     }
 }
 </script>
