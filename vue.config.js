@@ -1,5 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/dist/'
+        ? 'public_html/spa-loft/dist/'
         : '/'
 }
