@@ -4,7 +4,9 @@ import { createStore } from 'vuex';
 export default createStore({
     state:{
         width: null,
+        scroll: null,
         demoSmoke: false,
+        mobileMenuState: true,
         themeSettings: {
             textColor: '#fff',
             backgroundColor: '#000',
@@ -14,8 +16,17 @@ export default createStore({
         }
     },
     mutations:{
+        changeVisionMobileMenu (state) {
+          state.mobileMenuState = !state.mobileMenuState
+        },
+        setVisionMobileMenu (state) {
+          state.mobileMenuState = false
+        },
         setTheme(state, payload) {
             state.themeSettings = payload
+        },
+        setScroll (state, payload) {
+            state.scroll = payload
         },
         setWidth(state, payload) {
             state.width = payload

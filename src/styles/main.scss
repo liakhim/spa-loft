@@ -25,6 +25,11 @@
         }
       }
     }
+    @media (max-width: 690px) {
+      .title {
+        margin-top: 10px;
+      }
+    }
   }
 }
 .content {
@@ -77,15 +82,40 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin: 0 0 15px 0;
       @media (max-width: 700px) {
-        // margin: 0 0 10px 0;
+        margin: 0 0 10px 0;
       }
       &-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         li {
           margin: 0.5rem 0;
           font-size: 1.1rem;
           font-weight: bold;
         }
+      }
+    }
+    .menu-block-cocktails {
+      margin: 0 0 15px 0;
+      .menu-block-title {
+        li {
+          margin: 0;
+        }
+      }
+      .menu-block-price {
+        min-width: 66px;
+      }
+      p {
+        font-size: 1.15em;
+        margin: 10px 0 0 0;
+      }
+      span {
+        display: flex;
+        font-size: 0.8em;
+        font-weight: 500;
+        margin: 10px 0 0 0;
       }
     }
   }

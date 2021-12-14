@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="title">
+        <div class="title" style="margin: 30px 0 0 0">
             <h2>Аренда VIP-КОМНАТ</h2>
         </div>
         <div class="content">
-            <div class="menu-column">
+            <div class="menu-column" style="padding: 0">
                 <div class="menu-column-subtitle">
                     <h3>2500 RUB</h3>
                 </div>

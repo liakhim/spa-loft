@@ -1,40 +1,43 @@
 <template>
-    <swiper
-            style="width: 100%; display:flex;"
-            :slides-per-view="2"
-            :space-between="50"
-            @swiper="onSwiper()"
-            :loop="false"
-            ref="carousel"
-            class="swiper-slider"
-            @slideChange="onSlideChange()"
-    >
-        <swiper-slide>
-            <router-link to="/hot-drinks">
-                <span :class="{'active': $route.path === '/hot-drinks'}">Горячие напитки</span>
-            </router-link>
-        </swiper-slide>
-        <swiper-slide>
-            <router-link to="/cold-drinks">
-                <span :class="{'active': $route.path === '/cold-drinks'}">Холодные напитки</span>
-            </router-link>
-        </swiper-slide>
-        <swiper-slide>
-            <router-link to="/alcohol-drinks">
-                <span :class="{'active': $route.path === '/alcohol-drinks'}">Алкогольные напитки</span>
-            </router-link>
-        </swiper-slide>
-        <swiper-slide>
-            <router-link to="/cocktails">
-                <span :class="{'active': $route.path === '/cocktails'}">Коктейли</span>
-            </router-link>
-        </swiper-slide>
-        <swiper-slide>
-            <router-link to="/vip-rooms">
-                <span :class="{'active': $route.path === '/vip-rooms'}">Vip Rooms</span>
-            </router-link>
-        </swiper-slide>
-    </swiper>
+    <div style="height: 40px; border: 1px solid red;display:flex; align-items: center"
+         :style="{'background-color': $store.state.themeSettings.backgroundColor}">
+        <swiper
+                :slides-per-view="2"
+                :space-between="50"
+                @swiper="onSwiper()"
+                :loop="false"
+                ref="carousel"
+                cssMode="freeMode"
+                class="swiper-slider"
+                @slideChange="onSlideChange()"
+        >
+            <swiper-slide>
+                <router-link to="/hot-drinks">
+                    <span :class="{'active': $route.path === '/hot-drinks'}">Горячие напитки</span>
+                </router-link>
+            </swiper-slide>
+            <swiper-slide>
+                <router-link to="/cold-drinks">
+                    <span :class="{'active': $route.path === '/cold-drinks'}">Холодные напитки</span>
+                </router-link>
+            </swiper-slide>
+            <swiper-slide>
+                <router-link to="/alcohol-drinks">
+                    <span :class="{'active': $route.path === '/alcohol-drinks'}">Алкогольные напитки</span>
+                </router-link>
+            </swiper-slide>
+            <swiper-slide>
+                <router-link to="/cocktails">
+                    <span :class="{'active': $route.path === '/cocktails'}">Коктейли</span>
+                </router-link>
+            </swiper-slide>
+            <swiper-slide>
+                <router-link to="/vip-rooms">
+                    <span :class="{'active': $route.path === '/vip-rooms'}">Vip Rooms</span>
+                </router-link>
+            </swiper-slide>
+        </swiper>
+    </div>
 </template>
 <script>
     // Import Swiper Vue.js components

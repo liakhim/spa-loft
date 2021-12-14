@@ -9,11 +9,6 @@
             'background-position': themeSettings.backgroundPosition,
             'color': demoSmoke ? '#fff' : themeSettings.textColor
          }">
-            <div class="video-background" v-if="demoSmoke">
-                <video style="width: 100vw;min-height: 100vh; position: fixed" autoplay muted loop id="myVideo">
-                    <source src="/assets/img/smoke.mp4" type="video/mp4">
-                </video>
-            </div>
             <div style="min-height: 100vh;display:flex;flex-direction: column"
                  :style="{'backdrop-filter':demoSmoke ? 'blur(30px)' : 'blur(10px)'}">
                 <Header/>
@@ -42,10 +37,13 @@ export default {
       Header, Footer
    },
     methods: {
-       ...mapMutations(['setWidth']),
+       ...mapMutations(['setWidth', 'setVisionMobileMenu']),
         updateWidth() {
             this.width = window.innerWidth;
             this.setWidth(this.width)
+            if (this.width >= 700) {
+                this.setVisionMobileMenu()
+            }
         }
     },
     computed: {
@@ -53,6 +51,9 @@ export default {
     },
     created() {
         this.width = window.innerWidth
+        if (this.width >= 700) {
+            this.setVisionMobileMenu()
+        }
         this.setWidth(this.width)
         window.addEventListener('resize', this.updateWidth);
     },
@@ -93,7 +94,7 @@ export default {
         .content-wrapper {
             // backdrop-filter: blur(10px);
             min-height: calc(100vh - 120px - 40px);
-            margin-top: 120px;
+            // margin-top: 120px;
             position: relative;
             /*display: flex;*/
             /*flex-direction: column;*/

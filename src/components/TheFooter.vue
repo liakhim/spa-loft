@@ -1,9 +1,9 @@
 <template>
     <div class="footer">
-        <div class="footer-container container">
-            <button class="demoSmoke" type="button" @click="toggleDemoSmoke()">Demo Smoke</button>
-            <button class="demoSmoke green" @click="setUniversalImage()">Universal Image</button>
-        </div>
+<!--        <div class="footer-container container">-->
+<!--            <button class="demoSmoke" type="button" @click="toggleDemoSmoke()">Demo Smoke</button>-->
+<!--            <button class="demoSmoke green" @click="setUniversalImage()">Universal Image</button>-->
+<!--        </div>-->
     </div>
 </template>
 <script>

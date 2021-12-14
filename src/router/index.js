@@ -5,6 +5,7 @@ const routes = [
   {
     path: '/',
     name: 'Main',
+    redirect: '/hot-drinks',
     component: () => import(/* webpackChunkName: "about" */ '../views/Page.vue'),
     children: [
       {
