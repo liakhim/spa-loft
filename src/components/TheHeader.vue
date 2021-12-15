@@ -11,7 +11,7 @@
                 </div>
                 <Burger/>
             </div>
-            <Menu/>
+            <Menu v-if="true"/>
             <DesktopMenu v-if="false"/>
         </div>
     </div>

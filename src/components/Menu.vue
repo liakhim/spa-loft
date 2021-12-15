@@ -4,31 +4,31 @@
           'nav-wrapper-lines-light': $store.state.mobileMenuState && $store.state.themeSettings.textColor === '#000' }"
          :style="{'height': heightHeader}">
         <div :style="{'transform': !$store.state.mobileMenuState ? 'scale(0)' : 'scale(1)'}" class="logo-nav">
-            <img :style="{'filter': 'invert(' + (($store.state.themeSettings.textColor === '#fff' || $store.state.demoSmoke) ? '0' : '1') + ')'}" src="/assets/img/logo.svg" alt="">
+            <img :style="{'filter': 'invert(' + ($store.state.themeSettings.textColor === '#fff' ? '0' : '1') + ')'}" src="/assets/img/logo.svg" alt="">
         </div>
         <ul class="nav">
             <li @click="$store.commit('setVisionMobileMenu')" class="nav-item">
-                <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/hot-drinks">
+                <router-link :style="{color: $store.state.themeSettings.textColor}" to="/hot-drinks">
                     Горячие напитки
                 </router-link>
             </li>
             <li @click="$store.commit('setVisionMobileMenu')" class="nav-item">
-                <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/cold-drinks">
+                <router-link :style="{color: $store.state.themeSettings.textColor}" to="/cold-drinks">
                     Холодные напитки
                 </router-link>
             </li>
             <li @click="$store.commit('setVisionMobileMenu')" class="nav-item">
-                <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/alcohol-drinks">
+                <router-link :style="{color: $store.state.themeSettings.textColor}" to="/alcohol-drinks">
                     Алкогольные напитки
                 </router-link>
             </li>
             <li @click="$store.commit('setVisionMobileMenu')" class="nav-item">
-                <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/cocktails">
+                <router-link :style="{color: $store.state.themeSettings.textColor}" to="/cocktails">
                     Коктейли
                 </router-link>
             </li>
             <li @click="$store.commit('setVisionMobileMenu')" class="nav-item">
-                <router-link :style="{color: demoSmoke ? '#fff' : $store.state.themeSettings.textColor}" to="/vip-rooms">
+                <router-link :style="{color: $store.state.themeSettings.textColor}" to="/vip-rooms">
                     VIP Rooms
                 </router-link>
             </li>
